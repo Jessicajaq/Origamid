@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Boostrap/css/bootstrap.css">
@@ -7,48 +8,143 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Caravan</title>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a href="index.html" class="navbar-brand"><img src="img/caravan.svg" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-3 box-shadow">
+        <a href="index.html" class="navbar-brand"><img src="img/caravan.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Locais
-                </a>
-                <div class="dropwdown-menu" aria-labelledby="navbarDropdown">
-                    <a href="" class="dropdown-item">Paris</a>
-                    <a href="" class="dropdown-item">Italia</a>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Locais
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="local.html" class="dropdown-item">Paris</a>
+                        <a href="local.html" class="dropdown-item">Italia</a>
+                        <a href="local.html" class="dropdown-item">Japão</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="planos.html" class="nav-link">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="btn btn-outline-primary ml-md-3">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid">
+        <div class="row bg-dark text-white">
+
+            <div class="col-lg-7 p-0">
+                <div id="carouselCidades" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCidades" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCidades" data-slide-to="1"></li>
+                        <li data-target="#carouselCidades" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/california.jpg" alt="Primeiro Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="display-4">California</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/paris.jpg" alt="Segundo Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="display-4">Paris</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/dublin.jpg" alt="Terceiro Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="display-4">Dublin</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselCidades" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselCidades" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a href="planos.html" class="nav-link" >Planos</a>
-            </li>
-            <li class="nav-item">
-                <a href="contato.html" class="nav-link">Contato</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">Login</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="btn btn-outline-primary ml-md-3">Inscreva-se</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+            </div>
 
-  
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script> 
-<script src="Boostrap/js/bootstrap.bundle.js"></script>   
-<script src="Boostrap/js/bootstrap.js"></script>
-<script src="Boostrap/js/bootstrap.min.js"></script>
-<script src="js/script.js" ></script>
+            <div class="col-lg-5 p-lg-4 p-md-5 m-xl-auto">
+                <h1 class="display-4">Realize a viagem dos seus sonhos</h1>
+                <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas</p>
+                <form action="">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Enviar E-mail">
+                        <span class="input-group-append">
+                            <button class="btn btn-primary" type="button">Inscreva-se</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <span class="h6 d-block">TUDO DE MELHOR PARA VOCÊ</span>
+            <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center img-height">
+                        <img src="img/icones/passaporte.svg" alt="Passaporte">
+                    </div>
+                    <h3>Documentos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center img-height">
+                        <img src="img/icones/passagens.svg" alt="Passaporte">
+                    </div>
+                    <h3>Passagens</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's 
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center img-height">
+                        <img src="img/icones/translado.svg" alt="Passaporte">
+                    </div>
+                    <h3>Translado</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="Boostrap/js/bootstrap.js"></script>
+    <script src="Boostrap/js/bootstrap.bundle.js"></script>
+    <script src="Boostrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
